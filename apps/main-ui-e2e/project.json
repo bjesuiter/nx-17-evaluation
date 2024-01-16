@@ -4,6 +4,13 @@
   "projectType": "application",
   "sourceRoot": "apps/main-ui-e2e/src",
   "targets": {
+    "start": {
+      "executor": "@nx/workspace:run-commands",
+      "options": {
+        "commands": ["nx run main-ui-e2e:e2e --ui"],
+        "cwd": "apps/main-ui-e2e"
+      }
+    },
     "e2e": {
       "executor": "@nx/playwright:playwright",
       "outputs": ["{workspaceRoot}/dist/.playwright/apps/main-ui-e2e"],
@@ -11,9 +18,15 @@
         "config": "apps/main-ui-e2e/playwright.config.ts"
       }
     },
+    "e2e-ui": {
+      "command": "npx nx run main-ui-e2e:e2e --ui"
+    },
     "lint": {
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"]
+    },
+    "show-report": {
+      "command": "npx playwright show-report dist/.playwright/apps/main-ui-e2e/playwright-report"
     }
   },
   "implicitDependencies": ["main-ui"]
