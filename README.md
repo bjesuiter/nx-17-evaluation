@@ -4,6 +4,10 @@
 
 ### 2024-01-16 Try to integrate vitest with this angular app
 
+Guides: 
+- https://dev.to/brandontroberts/faster-testing-with-angular-and-vitest-274n
+- https://analogjs.org/docs/features/testing/vitest
+
 1. npm install @analogjs/platform --save-dev
 2. nx g @analogjs/platform:setup-vitest --project main-ui (runs the angular schematic under the hood!)
 
