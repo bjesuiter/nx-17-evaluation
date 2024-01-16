@@ -8,9 +8,9 @@
 2. Setup Angular App (evaluate flags via `nx g @nx/angular:app --help`)
 
 ```
-nx g @nx/angular:app --name demo-ui --bundler esbuild --routing true --standalone true \
---addTailwind true --style css --linter eslint --unitTestRunner none --e2eTestRunner playwright --tags=type:app,scope:demo --ssr false --strict true --prefix demo \
---directory apps --dryRun false --interactive false
+nx g @nx/angular:app --name main-ui --bundler=esbuild --routing=true --standalone=true \
+--addTailwind=true --style=css --linter=eslint --unitTestRunner=none --e2eTestRunner=playwright --tags=type:app,scope:main --ssr false --strict true --prefix main \
+--directory=apps --dryRun=false --interactive=false --minimal=true
 ```
 
 ### 2024-01-16 Repo Creation with create-nx-workspace cli
