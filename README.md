@@ -2,6 +2,13 @@
 
 ## Repo Log
 
+
+
+### 2024-01-16 Try to integrate vitest with this angular app
+
+1. npm install @analogjs/platform --save-dev
+2. ng g @analogjs/platform:setup-vitest --project ./apps/main-ui
+
 ### 2024-01-16 Add Angular App
 
 1. Run `npm install -D @nx/angular`
