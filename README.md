@@ -9,9 +9,8 @@
 
 ```
 nx g @nx/angular:app --name demo-ui --bundler esbuild --routing true --standalone true \
---addTailwind true --style css --linter eslint --unitTestRunner none --e2eTestRunner playwright --tags=type:app,scope:demo --ssr false --strict true --prefix demo
---directory apps/demo-ui --dryRun false --interactive false
-```
+--addTailwind true --style css --linter eslint --unitTestRunner none --e2eTestRunner playwright --tags=type:app,scope:demo --ssr false --strict true --prefix demo \
+--directory apps --dryRun false --interactive false
 ```
 
 ### 2024-01-16 Repo Creation with create-nx-workspace cli
@@ -27,10 +26,3 @@ npx create-nx-workspace@17.2.8 --name nx-17-evaluation --interactive false --wor
 
 2. Init Git Repo (I do it via vscode, cli also possible)
 
-```
-
-```
-
-```
-
-```
