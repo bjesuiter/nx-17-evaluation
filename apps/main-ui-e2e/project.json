@@ -4,10 +4,13 @@
   "projectType": "application",
   "sourceRoot": "apps/main-ui-e2e/src",
   "targets": {
-    "start": {
-      "executor": "@nx/workspace:run-commands",
+    "once": {
+      "executor": "nx:run-commands",
       "options": {
-        "commands": ["nx run main-ui-e2e:e2e --ui"],
+        "commands": [
+          "nx run main-ui-e2e:e2e",
+          "nx run main-ui-e2e:show-report"
+        ],
         "cwd": "apps/main-ui-e2e"
       }
     },
@@ -20,6 +23,9 @@
     },
     "e2e-ui": {
       "command": "npx nx run main-ui-e2e:e2e --ui"
+    },
+    "e2e-headed": {
+      "command": "npx nx run main-ui-e2e:e2e --headed"
     },
     "lint": {
       "executor": "@nx/eslint:lint",
