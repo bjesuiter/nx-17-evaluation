@@ -8,7 +8,8 @@
 2. Setup Angular App
 
 ```
-nx g @nx/angular:app --name demo-ui --bundler esbuild --routing true --standalone true --addTailwind true --style css --linter eslint --unitTestRunner vitest --e2eTestRunner playwright --tags=type:app,scope:demo
+nx g @nx/angular:app --name demo-ui --bundler esbuild --routing true --standalone true --addTailwind true --style css --linter eslint --unitTestRunner vitest --e2eTestRunner playwright --tags=type:app,scope:demo --ssr false --strict true
+```
 ```
 
 ### 2024-01-16 Repo Creation with create-nx-workspace cli
