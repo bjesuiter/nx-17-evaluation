@@ -5,12 +5,12 @@
 ### 2024-01-16 Add Angular App
 
 1. Run `npm install -D @nx/angular`
-2. Setup Angular App
+2. Setup Angular App (evaluate flags via `nx g @nx/angular:app --help`)
 
 ```
 nx g @nx/angular:app --name demo-ui --bundler esbuild --routing true --standalone true \
 --addTailwind true --style css --linter eslint --unitTestRunner none --e2eTestRunner playwright --tags=type:app,scope:demo --ssr false --strict true --prefix demo
---directory apps --dryRun false --interactive false
+--directory apps/demo-ui --dryRun false --interactive false
 ```
 ```
 
