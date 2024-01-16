@@ -4,7 +4,8 @@
 
 ### 2024-01-16 Try to integrate vitest with this angular app
 
-Guides: 
+Guides:
+
 - https://dev.to/brandontroberts/faster-testing-with-angular-and-vitest-274n
 - https://analogjs.org/docs/features/testing/vitest
 
