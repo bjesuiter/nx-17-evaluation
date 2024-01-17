@@ -93,6 +93,13 @@
         "config": "./apps/main-ui/vite.config.ts",
         "passWithNoTests": false
       }
+    },
+    "test-ng-comps": {
+      "executor": "@analogjs/platform:vitest",
+      "options": {
+        "config": "vite.config.ng-comps.ts",
+        "passWithNoTests": false
+      }
     }
   }
 }
