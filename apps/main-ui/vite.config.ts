@@ -9,6 +9,7 @@ import { defineConfig } from "vite";
  * - Can also be used for testing pure-ts files!
  *
  * tt-bj2: works only wiht jsdom right now!
+ * tt-bj2: needs the tsconfig.spec.json to work! Probably auto-imported by @analogjs/platform:vitest executor
  */
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
