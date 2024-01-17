@@ -69,19 +69,22 @@
       "executor": "@analogjs/platform:vitest",
       "options": {
         "config": "vite.config.ts",
-        "watch": true
+        "watch": true,
+        "passWithNoTests": false
       }
     },
     "test": {
       "executor": "@analogjs/platform:vitest",
       "options": {
-        "config": "vite.config.ts"
+        "config": "vite.config.ts",
+        "passWithNoTests": false
       }
     },
     "test-browser": {
       "executor": "@analogjs/platform:vitest",
       "options": {
-        "config": "vite.config.browser.ts"
+        "config": "vite.config.browser.ts",
+        "passWithNoTests": false
       }
     }
   }
