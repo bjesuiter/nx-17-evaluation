@@ -65,41 +65,19 @@
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"]
     },
+    "test-demo": {
+      "executor": "@analogjs/platform:vitest",
+      "options": {
+        "passWithNoTests": false
+      }
+    },
     "test": {
       "executor": "@analogjs/platform:vitest",
       "options": {
         "passWithNoTests": false
       }
     },
-    "test-watch": {
-      "executor": "@analogjs/platform:vitest",
-      "options": {
-        "config": "vite.config.plain-ts.ts",
-        "watch": true,
-        "passWithNoTests": false
-      }
-    },
-    "test-ts-browser": {
-      "executor": "@analogjs/platform:vitest",
-      "options": {
-        "config": "./apps/main-ui/vite.config.plain-ts.browser.ts",
-        "passWithNoTests": false
-      }
-    },
-    "test-ts": {
-      "executor": "@nx/vite:test",
-      "options": {
-        "config": "./apps/main-ui/vite.config.plain-ts.ts",
-        "passWithNoTests": false
-      }
-    },
     "test-ng-comps": {
-      "executor": "@analogjs/platform:vitest",
-      "options": {
-        "passWithNoTests": false
-      }
-    },
-    "test-demo": {
       "executor": "@analogjs/platform:vitest",
       "options": {
         "passWithNoTests": false

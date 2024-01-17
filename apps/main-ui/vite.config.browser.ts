@@ -1,16 +1,17 @@
 /// <reference types="vitest" />
 
-// import angular from "@analogjs/vite-plugin-angular";
+import angular from "@analogjs/vite-plugin-angular";
 import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
+// tt-bj2: WIP right now!
 export default defineConfig(({ mode }) => {
   return {
-    // plugins: [angular()],
+    plugins: [angular()],
     test: {
       globals: true,
       setupFiles: ["src/test-setup.ts"],
-      include: ["**/*.test.ts"],
+      include: ["**/*.spec.ts", "**/*.test.ts"],
       reporters: ["default"],
       browser: {
         enabled: true,
