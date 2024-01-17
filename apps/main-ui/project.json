@@ -65,6 +65,13 @@
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"]
     },
+    "test": {
+      "executor": "@analogjs/platform:vitest",
+      "options": {
+        "config": "vite.config.ts",
+        "passWithNoTests": false
+      }
+    },
     "test-watch": {
       "executor": "@analogjs/platform:vitest",
       "options": {
@@ -73,17 +80,17 @@
         "passWithNoTests": false
       }
     },
-    "test": {
-      "executor": "@analogjs/platform:vitest",
-      "options": {
-        "config": "vite.config.ts",
-        "passWithNoTests": false
-      }
-    },
     "test-browser": {
       "executor": "@analogjs/platform:vitest",
       "options": {
         "config": "vite.config.browser.ts",
+        "passWithNoTests": false
+      }
+    },
+    "vitest": {
+      "executor": "@nx/vite:test",
+      "options": {
+        "config": "./apps/main-ui/vite.config.ts",
         "passWithNoTests": false
       }
     }
