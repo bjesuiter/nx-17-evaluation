@@ -68,7 +68,6 @@
     "test": {
       "executor": "@analogjs/platform:vitest",
       "options": {
-        "config": "vite.config.plain-ts.ts",
         "passWithNoTests": false
       }
     },
@@ -80,14 +79,14 @@
         "passWithNoTests": false
       }
     },
-    "test-browser": {
+    "test-ts-browser": {
       "executor": "@analogjs/platform:vitest",
       "options": {
-        "config": "vite.config.browser.ts",
+        "config": "./apps/main-ui/vite.config.plain-ts.browser.ts",
         "passWithNoTests": false
       }
     },
-    "test-nx": {
+    "test-ts": {
       "executor": "@nx/vite:test",
       "options": {
         "config": "./apps/main-ui/vite.config.plain-ts.ts",
@@ -97,7 +96,6 @@
     "test-ng-comps": {
       "executor": "@analogjs/platform:vitest",
       "options": {
-        "config": "vite.config.ng-comps.ts",
         "passWithNoTests": false
       }
     },

@@ -5,7 +5,8 @@ import { defineConfig } from "vite";
 
 /**
  * File Configured for Angular Component & Service Testing with TestBed
- * Needed for @analogjs/platform:vitest executor to pick up this config
+ * - Needed for @analogjs/platform:vitest executor to pick up this config
+ * - Can also be used for testing pure-ts files!
  *
  * tt-bj2: works only wiht jsdom right now!
  */
@@ -16,7 +17,7 @@ export default defineConfig(({ mode }) => {
     test: {
       globals: true,
       setupFiles: ["src/test-setup.ts"],
-      include: ["**/*.spec.ts"],
+      include: ["**/*.spec.ts", "**/*.test.ts"],
       reporters: ["default"],
       environment: "jsdom", // # can be used to run tests in jsdom
       // alternative: run unit tests in browser via playwright!
