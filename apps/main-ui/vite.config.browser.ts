@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
     test: {
       globals: true,
       setupFiles: ["src/test-setup.ts"],
-      include: ["**/*.spec.ts"],
+      include: ["**/*.test.ts"],
       reporters: ["default"],
       browser: {
         enabled: true,

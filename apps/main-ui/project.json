@@ -68,14 +68,14 @@
     "test": {
       "executor": "@analogjs/platform:vitest",
       "options": {
-        "config": "vite.config.ts",
+        "config": "vite.config.plain-ts.ts",
         "passWithNoTests": false
       }
     },
     "test-watch": {
       "executor": "@analogjs/platform:vitest",
       "options": {
-        "config": "vite.config.ts",
+        "config": "vite.config.plain-ts.ts",
         "watch": true,
         "passWithNoTests": false
       }
@@ -87,10 +87,10 @@
         "passWithNoTests": false
       }
     },
-    "vitest": {
+    "test-nx": {
       "executor": "@nx/vite:test",
       "options": {
-        "config": "./apps/main-ui/vite.config.ts",
+        "config": "./apps/main-ui/vite.config.ng-comps.ts",
         "passWithNoTests": false
       }
     },
