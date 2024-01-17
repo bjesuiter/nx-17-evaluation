@@ -65,6 +65,13 @@
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"]
     },
+    "test-watch": {
+      "executor": "@analogjs/platform:vitest",
+      "options": {
+        "config": "vite.config.ts",
+        "watch": true
+      }
+    },
     "test": {
       "executor": "@analogjs/platform:vitest",
       "options": {
