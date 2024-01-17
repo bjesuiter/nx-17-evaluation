@@ -1,0 +1,5 @@
+{
+  "vitest.enable": true,
+  "vitest.showFailMessages": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
