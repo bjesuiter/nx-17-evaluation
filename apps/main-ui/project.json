@@ -66,7 +66,16 @@
       "outputs": ["{options.outputFile}"]
     },
     "test": {
-      "executor": "@analogjs/platform:vitest"
+      "executor": "@analogjs/platform:vitest",
+      "options": {
+        "config": "vite.config.ts"
+      }
+    },
+    "test-browser": {
+      "executor": "@analogjs/platform:vitest",
+      "options": {
+        "config": "vite.config.browser.ts"
+      }
     }
   }
 }
