@@ -17,5 +17,9 @@ describe("main-ui: app.component.ts", () => {
     fixture.detectChanges();
 
     expect(component).toBeDefined();
+    expect(component.title).toEqual("main-ui");
+
+    // use to fail this test for validating if this test works
+    // expect(component.title).toEqual("bob");
   });
 });

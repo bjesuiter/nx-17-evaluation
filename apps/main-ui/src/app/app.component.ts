@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component } from "@angular/core";
+import { RouterModule } from "@angular/router";
 
 @Component({
   standalone: true,
   imports: [RouterModule],
-  selector: 'main-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  selector: "main-root",
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.css",
 })
-export class AppComponent {}
+export class AppComponent {
+  title = "main-ui";
+}
