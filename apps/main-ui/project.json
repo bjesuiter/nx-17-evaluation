@@ -90,7 +90,7 @@
     "test-nx": {
       "executor": "@nx/vite:test",
       "options": {
-        "config": "./apps/main-ui/vite.config.ng-comps.ts",
+        "config": "./apps/main-ui/vite.config.plain-ts.ts",
         "passWithNoTests": false
       }
     },
@@ -98,6 +98,12 @@
       "executor": "@analogjs/platform:vitest",
       "options": {
         "config": "vite.config.ng-comps.ts",
+        "passWithNoTests": false
+      }
+    },
+    "test-demo": {
+      "executor": "@analogjs/platform:vitest",
+      "options": {
         "passWithNoTests": false
       }
     }
